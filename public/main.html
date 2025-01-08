@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>News Site</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/home"><img src="../images/logo.jpg" width="100%" alt="Newslogo"></a>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/cricket">Cricket</a>
+            <a class="dropdown-item" href="/football">Football</a>
+            <a class="dropdown-item" href="/hockey">Hockey</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/business">Business </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/entertainment">Entertainment </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/politics">Politics </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" action="/search" method="get">
+        <input class="form-control mr-sm-2" type="search" name="searchvalue" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <section>
+    <div class="container" id="news">
+      <div class="row" id="articles-list">
+       <!--content-->
+
+
+
+       
+      </div>
+    </div>
+    <nav>
+      <ul class="pagination justify-content-center" id="pagination-controls"></ul>
+  </nav>
+  </section>
+  <script src="senddata.js"></script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</html>
